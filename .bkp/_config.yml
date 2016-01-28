@@ -1,0 +1,11 @@
+# Site settings
+title: Hunting for archaeological bargains
+email: edward_prince@hotmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Weekly blog updating on progress in relation to the robot bargain hunt project set for this terms ALL.
+baseurl: "/bargain-log/" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+github_username:  edprince
+
+# Build settings
+markdown: kramdown
