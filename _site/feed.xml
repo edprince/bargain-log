@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ion</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Hunting for archaeological bargains</title>
+    <description>Weekly blog updating on progress in relation to the robot bargain hunt project set for this terms ALL.
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 28 Jan 2016 12:45:31 +0000</pubDate>
-    <lastBuildDate>Thu, 28 Jan 2016 12:45:31 +0000</lastBuildDate>
+    <link>http://yourdomain.com/bargain-log//</link>
+    <atom:link href="http://yourdomain.com/bargain-log//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 28 Jan 2016 14:35:21 +0000</pubDate>
+    <lastBuildDate>Thu, 28 Jan 2016 14:35:21 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -31,8 +31,8 @@ in the group.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 18 Jan 2016 23:59:05 +0000</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/01/18/week1.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/01/18/week1.html</guid>
+        <link>http://yourdomain.com/bargain-log//jekyll/update/2016/01/18/week1.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/bargain-log//jekyll/update/2016/01/18/week1.html</guid>
         
         
         <category>jekyll</category>
@@ -100,8 +100,8 @@ that would read the file and build the map list accordingly.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 18 Jan 2016 23:59:05 +0000</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/01/18/pygame.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/01/18/pygame.html</guid>
+        <link>http://yourdomain.com/bargain-log//jekyll/update/2016/01/18/pygame.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/bargain-log//jekyll/update/2016/01/18/pygame.html</guid>
         
         
         <category>jekyll</category>
@@ -160,8 +160,8 @@ well as alerting people on Gitter.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 18 Jan 2016 23:59:05 +0000</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/01/18/assets.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/01/18/assets.html</guid>
+        <link>http://yourdomain.com/bargain-log//jekyll/update/2016/01/18/assets.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/bargain-log//jekyll/update/2016/01/18/assets.html</guid>
         
         
         <category>jekyll</category>
