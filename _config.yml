@@ -9,3 +9,4 @@ github_username:  edprince
 
 # Build settings
 markdown: kramdown
+#highlighter: rouge
