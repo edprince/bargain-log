@@ -13,10 +13,13 @@ layout: default
         </section>
         
         <footer>
-            {% if page.previous %}
+          <!--
+          {% if page.previous %}
             <a href="{{ page.previous.url }}" class="float-left">&larr; Previous post</a> {% endif %}
             {% if page.next %}
             <a href="{{ page.next.url }}" class="float-right">Next post &rarr;</a> {% endif %}
+            -->
+            <a href='{{ site.baseurl }}/blog.html' style='text-align:center'>Back to menu</a>
         </footer>
 
     </article>
