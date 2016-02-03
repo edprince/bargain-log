@@ -6,13 +6,69 @@
 </description>
     <link>http://yourdomain.com/bargain-log//</link>
     <atom:link href="http://yourdomain.com/bargain-log//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 01 Feb 2016 10:03:56 +0000</pubDate>
-    <lastBuildDate>Mon, 01 Feb 2016 10:03:56 +0000</lastBuildDate>
+    <pubDate>Wed, 03 Feb 2016 00:57:33 +0000</pubDate>
+    <lastBuildDate>Wed, 03 Feb 2016 00:57:33 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
+        <title>Inventory</title>
+        <description>&lt;p&gt;I have just been working on implementing an inventory system for the game,
+allowing the player to see which items they have, and how many of each. This
+involves looping over the game items dictionary and displaying each in turn
+followed by a variable (representing quantity), in the Pygame window.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;placePosition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;game_items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;DISPLAYSURF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;blit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;game_items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;placePosition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MAPHEIGHT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TILESIZE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;placePosition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;textObj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;INVFONT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inventory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WHITE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BLACK&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;DISPLAYSURF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;blit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textObj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;placePosition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MAPHEIGHT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TILESIZE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;placePosition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Wed, 03 Feb 2016 23:59:05 +0000</pubDate>
+        <link>http://yourdomain.com/bargain-log//jekyll/update/2016/02/03/inventory.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/bargain-log//jekyll/update/2016/02/03/inventory.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
         <title>Activity Diagram</title>
-        <description>&lt;p&gt;We&lt;/p&gt;
+        <description>&lt;p&gt;This week I have been working on the activity diagram, defining an abstracted
+version of the way that our game will work. This does not include the less
+abstracted details within the game, but a far more general representation of the
+way the elements all tie in together.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/MhQrHp3.png&quot; alt=&quot;Activity Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On top of this we have also been working on some more assets for the game
+including characters and keys. I have found using a free online editor called
+Piskel to have been a great aid for creating pixel-style sprites and tiles for
+this game.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s-media-cache-ak0.pinimg.com/236x/a4/02/fb/a402fb118eb4ec661afd8920cbeaff10.jpg&quot; alt=&quot;8-bit Indy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I felt that this style of character would fit the game we are designing well,
+with enough familiarity to the popular explorer and adventurer: Indiana Jones.&lt;/p&gt;
+
+&lt;h2 id=&quot;splitting-up-some-code&quot;&gt;Splitting up some code&lt;/h2&gt;
+&lt;p&gt;Some time was spent this week going into code management for the project. A
+&lt;code&gt;main.py&lt;/code&gt; file has been created, but instead of filling it up with functions and
+classes, I decided to split those up into their own files, complete with
+docstrings and comments explaining how they work. Then the main file simply
+imports them and thus has access to all of their respective functions and
+classes. This will make it much easier to read through the main file, identify
+where errors are being created, and for another programmer to come and
+read/understand.&lt;/p&gt;
+
+&lt;h1 id=&quot;file-tree&quot;&gt;File Tree&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/FrGaD2P.png&quot; alt=&quot;File Tree&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 01 Feb 2016 09:48:05 +0000</pubDate>
@@ -27,28 +83,57 @@
       </item>
     
       <item>
-        <title>Starting out</title>
-        <description>&lt;p&gt;So we have just started the robot bargain hunt task, and I have a reasonable
-outline of what the project is aiming for. We need to implement a searching and
-sorting algorithm along with a GUI to create a program that locates bargains. To
-begin with we have created a public git repository, hosted on GitHub, and all
-tested pushing our own example work to it. Along with this we are also
-communicating using Gitter, which is fantastic for integrating other
-applications with, such as Trello, which we are using to create lists of
-components that need to be implemented, ideas, deadlines etc. Along with this,
-we are using Travis CI in order to make use of continuous integration. For any
-functions/code we write, we can have unit tests and such to make sure they are
-working, and also prevent the code from being broken in the future. All this
-data is also delivered straight to Gitter making it easily visible for everyone
-in the group.&lt;/p&gt;
+        <title>Creating assets</title>
+        <description>&lt;p&gt;This week so far I have been working on creating some assets for the game. We
+have settled on the archaeological dig idea for the project, so I am able to
+start doing some asset designs. I have a very basic 32x32 tileset to make the
+map, and am now building up other assets for the game. I have created a cactus
+object, that is generated in multiple random locations on the map using the TREE
+DENSITY variable, declared at the top of the main file. They can however only be
+generated if the tile on which it is being debated is SAND. This means they
+cannot spawn in water/stone etc.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/en/2/2f/Gitter_logo.png&quot; alt=&quot;Gitter logo&quot; /&gt;
-&lt;img src=&quot;https://workablehr.s3.amazonaws.com/uploads/account/logo/11901/large_Mascot-fullcolor-png.png&quot; alt=&quot;Travis CI logo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I have also created a bone, and a coin asset, both of which should eventually be
+able to be collected.&lt;/p&gt;
+
+&lt;h2 id=&quot;sorting-algorithm&quot;&gt;Sorting algorithm&lt;/h2&gt;
+&lt;p&gt;I have implemented a bubble sort algorithm in Python, ordering a list of numeric
+values. Although this can be done using the &lt;code&gt;sorted()&lt;/code&gt; function in Python, I
+felt it was worth implementing anyway. A difference to our sorting algorithm, is
+that they potentially won’t just be sorting a single list of values, but instead
+will be ordering objects in a list based on their value property.&lt;/p&gt;
+
+&lt;h2 id=&quot;class-design&quot;&gt;Class design&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item_type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;location&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item_type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item_type&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quantity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quantity&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This class is defined such that all instances are given the attributes: name,
+value, location, item type and quantity. All of which are pretty self
+explanatory. Using this, I have also written a function that can order any list
+of objects, providing they have a &lt;code&gt;value&lt;/code&gt; attribute.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://workablehr.s3.amazonaws.com/uploads/account/logo/11901/large_Mascot-fullcolor-png.png&quot; alt=&quot;Travis CI logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is where Travis CI comes in. Once I had written the function to sort a list
+of objects, I could use that function to test with. Once I could assure that
+this was working properly, I could use both the function in the main file, and
+the function in the travis test to both sort the same list. If they return the
+same result, then I know the other function is highly likely to be running
+correctly. If however, somebody makes changes to the function and breaks it,
+then the travis test file will raise an error, changing the project status on
+Travis to ‘failing’, which will change the badge on the README on GitHub, as
+well as alerting people on Gitter.&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 18 Jan 2016 23:59:05 +0000</pubDate>
-        <link>http://yourdomain.com/bargain-log//jekyll/update/2016/01/18/week1.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/bargain-log//jekyll/update/2016/01/18/week1.html</guid>
+        <pubDate>Thu, 28 Jan 2016 23:59:05 +0000</pubDate>
+        <link>http://yourdomain.com/bargain-log//jekyll/update/2016/01/28/assets.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/bargain-log//jekyll/update/2016/01/28/assets.html</guid>
         
         
         <category>jekyll</category>
@@ -115,9 +200,9 @@ that would read the file and build the map list accordingly.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/COsNT3x.png&quot; alt=&quot;Map&quot; /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 18 Jan 2016 23:59:05 +0000</pubDate>
-        <link>http://yourdomain.com/bargain-log//jekyll/update/2016/01/18/pygame.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/bargain-log//jekyll/update/2016/01/18/pygame.html</guid>
+        <pubDate>Mon, 25 Jan 2016 23:59:05 +0000</pubDate>
+        <link>http://yourdomain.com/bargain-log//jekyll/update/2016/01/25/pygame.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/bargain-log//jekyll/update/2016/01/25/pygame.html</guid>
         
         
         <category>jekyll</category>
@@ -127,57 +212,28 @@ that would read the file and build the map list accordingly.&lt;/p&gt;
       </item>
     
       <item>
-        <title>Creating assets</title>
-        <description>&lt;p&gt;This week so far I have been working on creating some assets for the game. We
-have settled on the archaeological dig idea for the project, so I am able to
-start doing some asset designs. I have a very basic 32x32 tileset to make the
-map, and am now building up other assets for the game. I have created a cactus
-object, that is generated in multiple random locations on the map using the TREE
-DENSITY variable, declared at the top of the main file. They can however only be
-generated if the tile on which it is being debated is SAND. This means they
-cannot spawn in water/stone etc.&lt;/p&gt;
+        <title>Starting out</title>
+        <description>&lt;p&gt;So we have just started the robot bargain hunt task, and I have a reasonable
+outline of what the project is aiming for. We need to implement a searching and
+sorting algorithm along with a GUI to create a program that locates bargains. To
+begin with we have created a public git repository, hosted on GitHub, and all
+tested pushing our own example work to it. Along with this we are also
+communicating using Gitter, which is fantastic for integrating other
+applications with, such as Trello, which we are using to create lists of
+components that need to be implemented, ideas, deadlines etc. Along with this,
+we are using Travis CI in order to make use of continuous integration. For any
+functions/code we write, we can have unit tests and such to make sure they are
+working, and also prevent the code from being broken in the future. All this
+data is also delivered straight to Gitter making it easily visible for everyone
+in the group.&lt;/p&gt;
 
-&lt;p&gt;I have also created a bone, and a coin asset, both of which should eventually be
-able to be collected.&lt;/p&gt;
-
-&lt;h2 id=&quot;sorting-algorithm&quot;&gt;Sorting algorithm&lt;/h2&gt;
-&lt;p&gt;I have implemented a bubble sort algorithm in Python, ordering a list of numeric
-values. Although this can be done using the &lt;code&gt;sorted()&lt;/code&gt; function in Python, I
-felt it was worth implementing anyway. A difference to our sorting algorithm, is
-that they potentially won’t just be sorting a single list of values, but instead
-will be ordering objects in a list based on their value property.&lt;/p&gt;
-
-&lt;h2 id=&quot;class-design&quot;&gt;Class design&lt;/h2&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item_type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;
-        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;
-        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;location&lt;/span&gt;
-        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item_type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item_type&lt;/span&gt;
-        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quantity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quantity&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;This class is defined such that all instances are given the attributes: name,
-value, location, item type and quantity. All of which are pretty self
-explanatory. Using this, I have also written a function that can order any list
-of objects, providing they have a &lt;code&gt;value&lt;/code&gt; attribute.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://workablehr.s3.amazonaws.com/uploads/account/logo/11901/large_Mascot-fullcolor-png.png&quot; alt=&quot;Travis CI logo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is where Travis CI comes in. Once I had written the function to sort a list
-of objects, I could use that function to test with. Once I could assure that
-this was working properly, I could use both the function in the main file, and
-the function in the travis test to both sort the same list. If they return the
-same result, then I know the other function is highly likely to be running
-correctly. If however, somebody makes changes to the function and breaks it,
-then the travis test file will raise an error, changing the project status on
-Travis to ‘failing’, which will change the badge on the README on GitHub, as
-well as alerting people on Gitter.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/en/2/2f/Gitter_logo.png&quot; alt=&quot;Gitter logo&quot; /&gt;
+&lt;img src=&quot;https://workablehr.s3.amazonaws.com/uploads/account/logo/11901/large_Mascot-fullcolor-png.png&quot; alt=&quot;Travis CI logo&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 18 Jan 2016 23:59:05 +0000</pubDate>
-        <link>http://yourdomain.com/bargain-log//jekyll/update/2016/01/18/assets.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/bargain-log//jekyll/update/2016/01/18/assets.html</guid>
+        <link>http://yourdomain.com/bargain-log//jekyll/update/2016/01/18/week1.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/bargain-log//jekyll/update/2016/01/18/week1.html</guid>
         
         
         <category>jekyll</category>
