@@ -4,6 +4,7 @@ title:  "Framerate issues and timer"
 date:   2016-02-22 12:21:05
 categories: jekyll update
 ---
+
 Today I have been working on fixing the incredibly slow framerate. After some
 research, we discovered that using DOUBLEBUF as a flag for the
 `display.set_mode()` improves this slightly, but still nowhere near the level we
