@@ -66,6 +66,72 @@
     
         <div class="wrapper style1">
             <header class="major">
+                <h2><a href="/bargain-log//jekyll/update/2016/03/10/rounding-off.html">Rounding off</a></h2>
+            </header>
+            <section class="container">
+                <p>Coming to the end of the project, we have done our presentation, received
+feedback on usability and touched up. We have improved a few things, including
+the bug that was stopping the items from displaying in the inventory correctly.</p>
+
+
+            </section>
+            <section class="special">
+                <ul class="actions">
+                    <li><a href="/bargain-log//jekyll/update/2016/03/10/rounding-off.html" class="button ">Read More</a></li>
+                </ul>
+            </section>
+        </div>
+    
+        <div class="wrapper style2">
+            <header class="major">
+                <h2><a href="/bargain-log//jekyll/update/2016/03/03/maps.html">Improving the Map</a></h2>
+            </header>
+            <section class="container">
+                <p>Today I have been working on the map. I have added a few extra tiles, a bush, a
+rock and water tiles. Unlike before, the objects in the game now spawn randomly
+instead of in a pre-defined location. As well as this, the map is generated
+randomly but not without a tiny bit of intelligence to make it slightly more
+realistic. Originally I was generating the items by simply moving over each
+tile, and attempting a probability based condition that was not likely, this
+would determine whether to add an asset on that space. Instead, now it takes
+into account the items around it, and creates a higher chance of spawning if
+there are more of its own tiles around. This now creates lumps of rock,
+pools/lakes and vegetation patches, instead of it all being totally randomly
+spewed out.</p>
+
+
+            </section>
+            <section class="special">
+                <ul class="actions">
+                    <li><a href="/bargain-log//jekyll/update/2016/03/03/maps.html" class="button alt">Read More</a></li>
+                </ul>
+            </section>
+        </div>
+    
+        <div class="wrapper style1">
+            <header class="major">
+                <h2><a href="/bargain-log//jekyll/update/2016/02/22/optimizing.html">Framerate issues and timer</a></h2>
+            </header>
+            <section class="container">
+                <p>Today I have been working on fixing the incredibly slow framerate. After some
+research, we discovered that using DOUBLEBUF as a flag for the
+<code>display.set_mode()</code> improves this slightly, but still nowhere near the level we
+wanted/needed. After some testing, and narrowing down, I found that it was the
+<code>.fill()</code> method being used that slowed the game down enormously. So I removed
+this and used the <code>.blit()</code> method, filling the screen with a tile instead. This
+dramatically improved our frame rate to a level we were happy with.</p>
+
+
+            </section>
+            <section class="special">
+                <ul class="actions">
+                    <li><a href="/bargain-log//jekyll/update/2016/02/22/optimizing.html" class="button ">Read More</a></li>
+                </ul>
+            </section>
+        </div>
+    
+        <div class="wrapper style2">
+            <header class="major">
                 <h2><a href="/bargain-log//jekyll/update/2016/02/09/prototype.html">Creating a prototype for the game</a></h2>
             </header>
             <section class="container">
@@ -81,12 +147,12 @@ algorithm that will allow the sprite to move efficiently from item to item.</p>
             </section>
             <section class="special">
                 <ul class="actions">
-                    <li><a href="/bargain-log//jekyll/update/2016/02/09/prototype.html" class="button ">Read More</a></li>
+                    <li><a href="/bargain-log//jekyll/update/2016/02/09/prototype.html" class="button alt">Read More</a></li>
                 </ul>
             </section>
         </div>
     
-        <div class="wrapper style2">
+        <div class="wrapper style1">
             <header class="major">
                 <h2><a href="/bargain-log//jekyll/update/2016/02/03/inventory.html">Inventory</a></h2>
             </header>
@@ -100,12 +166,12 @@ followed by a variable (representing quantity), in the Pygame window.</p>
             </section>
             <section class="special">
                 <ul class="actions">
-                    <li><a href="/bargain-log//jekyll/update/2016/02/03/inventory.html" class="button alt">Read More</a></li>
+                    <li><a href="/bargain-log//jekyll/update/2016/02/03/inventory.html" class="button ">Read More</a></li>
                 </ul>
             </section>
         </div>
     
-        <div class="wrapper style1">
+        <div class="wrapper style2">
             <header class="major">
                 <h2><a href="/bargain-log//jekyll/update/2016/02/01/activity.html">Activity Diagram</a></h2>
             </header>
@@ -119,12 +185,12 @@ way the elements all tie in together.</p>
             </section>
             <section class="special">
                 <ul class="actions">
-                    <li><a href="/bargain-log//jekyll/update/2016/02/01/activity.html" class="button ">Read More</a></li>
+                    <li><a href="/bargain-log//jekyll/update/2016/02/01/activity.html" class="button alt">Read More</a></li>
                 </ul>
             </section>
         </div>
     
-        <div class="wrapper style2">
+        <div class="wrapper style1">
             <header class="major">
                 <h2><a href="/bargain-log//jekyll/update/2016/01/28/assets.html">Creating assets</a></h2>
             </header>
@@ -142,12 +208,12 @@ cannot spawn in water/stone etc.</p>
             </section>
             <section class="special">
                 <ul class="actions">
-                    <li><a href="/bargain-log//jekyll/update/2016/01/28/assets.html" class="button alt">Read More</a></li>
+                    <li><a href="/bargain-log//jekyll/update/2016/01/28/assets.html" class="button ">Read More</a></li>
                 </ul>
             </section>
         </div>
     
-        <div class="wrapper style1">
+        <div class="wrapper style2">
             <header class="major">
                 <h2><a href="/bargain-log//jekyll/update/2016/01/25/pygame.html">Dabbling with Pygame</a></h2>
             </header>
@@ -160,12 +226,12 @@ run to see how viable it seems for this project.</p>
             </section>
             <section class="special">
                 <ul class="actions">
-                    <li><a href="/bargain-log//jekyll/update/2016/01/25/pygame.html" class="button ">Read More</a></li>
+                    <li><a href="/bargain-log//jekyll/update/2016/01/25/pygame.html" class="button alt">Read More</a></li>
                 </ul>
             </section>
         </div>
     
-        <div class="wrapper style2">
+        <div class="wrapper style1">
             <header class="major">
                 <h2><a href="/bargain-log//jekyll/update/2016/01/18/week1.html">Starting out</a></h2>
             </header>
@@ -188,7 +254,7 @@ in the group.</p>
             </section>
             <section class="special">
                 <ul class="actions">
-                    <li><a href="/bargain-log//jekyll/update/2016/01/18/week1.html" class="button alt">Read More</a></li>
+                    <li><a href="/bargain-log//jekyll/update/2016/01/18/week1.html" class="button ">Read More</a></li>
                 </ul>
             </section>
         </div>

@@ -6,9 +6,153 @@
 </description>
     <link>http://yourdomain.com/bargain-log//</link>
     <atom:link href="http://yourdomain.com/bargain-log//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 09 Feb 2016 09:25:11 +0000</pubDate>
-    <lastBuildDate>Tue, 09 Feb 2016 09:25:11 +0000</lastBuildDate>
+    <pubDate>Sun, 13 Mar 2016 01:05:11 +0000</pubDate>
+    <lastBuildDate>Sun, 13 Mar 2016 01:05:11 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Rounding off</title>
+        <description>&lt;p&gt;Coming to the end of the project, we have done our presentation, received
+feedback on usability and touched up. We have improved a few things, including
+the bug that was stopping the items from displaying in the inventory correctly.&lt;/p&gt;
+
+&lt;h1 id=&quot;individual-feature&quot;&gt;Individual Feature&lt;/h1&gt;
+
+&lt;p&gt;I have added an extra feature that tracks all the robots movements, displays on
+the map where it has been, and calculates what percentage of the map has been
+covered.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/cxH6P2q.png&quot; alt=&quot;Traced-map&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In order to calculate the percentage of the map covered, I wrote the following
+function:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate_percentage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;covered&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;totalW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;totalH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;sd&quot;&gt;&amp;#39;&amp;#39;&amp;#39;Function calculate how much of map is visited&lt;/span&gt;
+&lt;span class=&quot;sd&quot;&gt;    Takes 2 lists and compares to see how much of the ground has been visited&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;uniqueTiles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;totalW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;totalH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;covered&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;uniqueTiles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniqueTiles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;totalW&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;totalH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;evaluation-of-the-project&quot;&gt;Evaluation of the project&lt;/h3&gt;
+
+&lt;p&gt;Overall I think the project has been mixed with regards to it’s success, there
+are some things I feel have worked very well, and other aspects that can without
+doubt be chalked down to experience.&lt;/p&gt;
+
+&lt;p&gt;The first successful area of this project has been its management, and use of
+software to keep everybody up to date with progress.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://quickfixes.github.io/just-gittin-started/img/octocat.png&quot; alt=&quot;Github octocat&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The place to begin is with the most important management tool of the lot - GitHub.
+It has been vital for the progress and success of this project, that we successfully 
+used a version control system. GitHub has been magnificent, and although confusing for
+some members of the team who had never used it before, proved invaluable right the way
+to the end. We were able to commit code, revert to earlier builds, use branches for individual
+features, raise issues, assign tasks, view each others work, and integrate other software.&lt;/p&gt;
+
+&lt;p&gt;Other such software included Travis CI.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://workablehr.s3.amazonaws.com/uploads/account/logo/11901/large_Mascot-fullcolor-png.png&quot; alt=&quot;Travis CI logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Although for this project, it was largely irrelevant, Travis was a really cool
+service to successfully employ, more as an investment for future projects. With
+Travis CI, I was able to write unit tests that could test functions, and every
+time any code was commited, it would run the tests to make sure the functions
+were still being run correctly, if not, it would fail the build, alert me via
+email, and change the badge on the repository readme to ‘build: failing’.&lt;/p&gt;
+
+&lt;p&gt;Lastly, I feel the presentation was done well, and possibly the first time the
+group really pulled together a bit more. I think future projects will require
+far more communication, better delegation of work to individuals, and a more in
+depth analysis at the start, with a stronger focus on design. As a process, it
+has been fantastic, and very, very rewarding, seeing a project come from pen and
+paper, to a real product. And that’s it from me for this project.&lt;/p&gt;
+
+&lt;p&gt;Follow me on Twitter and GitHub to keep up to date with my work, and to see more
+blogs on future projects.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 10 Mar 2016 23:13:05 +0000</pubDate>
+        <link>http://yourdomain.com/bargain-log//jekyll/update/2016/03/10/rounding-off.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/bargain-log//jekyll/update/2016/03/10/rounding-off.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Improving the Map</title>
+        <description>&lt;p&gt;Today I have been working on the map. I have added a few extra tiles, a bush, a
+rock and water tiles. Unlike before, the objects in the game now spawn randomly
+instead of in a pre-defined location. As well as this, the map is generated
+randomly but not without a tiny bit of intelligence to make it slightly more
+realistic. Originally I was generating the items by simply moving over each
+tile, and attempting a probability based condition that was not likely, this
+would determine whether to add an asset on that space. Instead, now it takes
+into account the items around it, and creates a higher chance of spawning if
+there are more of its own tiles around. This now creates lumps of rock,
+pools/lakes and vegetation patches, instead of it all being totally randomly
+spewed out.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/K1MujZ9.png&quot; alt=&quot;Map&quot; /&gt;
+&lt;img src=&quot;http://i.imgur.com/gEPxUmR.png&quot; alt=&quot;Map&quot; /&gt;
+&lt;img src=&quot;http://i.imgur.com/82y3SeR.png&quot; alt=&quot;Map&quot; /&gt;
+&lt;img src=&quot;http://i.imgur.com/7J4X2aO.png&quot; alt=&quot;Map&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;those-funky-blue-lines&quot;&gt;Those Funky Blue Lines?&lt;/h1&gt;
+
+&lt;p&gt;So I added the blue lines in, as more of a human aid, to help identify where the
+objects are in the map, as sometimes they are reasonably hard to identify,
+especially when the robot is going fast.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 03 Mar 2016 03:05:05 +0000</pubDate>
+        <link>http://yourdomain.com/bargain-log//jekyll/update/2016/03/03/maps.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/bargain-log//jekyll/update/2016/03/03/maps.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Framerate issues and timer</title>
+        <description>&lt;p&gt;Today I have been working on fixing the incredibly slow framerate. After some
+research, we discovered that using DOUBLEBUF as a flag for the
+&lt;code&gt;display.set_mode()&lt;/code&gt; improves this slightly, but still nowhere near the level we
+wanted/needed. After some testing, and narrowing down, I found that it was the
+&lt;code&gt;.fill()&lt;/code&gt; method being used that slowed the game down enormously. So I removed
+this and used the &lt;code&gt;.blit()&lt;/code&gt; method, filling the screen with a tile instead. This
+dramatically improved our frame rate to a level we were happy with.&lt;/p&gt;
+
+&lt;p&gt;I was also working today on the timer for the project. The specifications state
+that the user should be able to enter a time that counts down, meaning the robot
+only has a set amount of time to collect items. This can be done very easily
+with pygame, using it’s built-in &lt;code&gt;pygame.time.set_timer()&lt;/code&gt; method, allowing a
+number of milliseconds to be specified before fulfilling a condition. From there
+a function can be called to bring up the scoreboard.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 22 Feb 2016 12:21:05 +0000</pubDate>
+        <link>http://yourdomain.com/bargain-log//jekyll/update/2016/02/22/optimizing.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/bargain-log//jekyll/update/2016/02/22/optimizing.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Creating a prototype for the game</title>
